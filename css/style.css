@@ -1,0 +1,182 @@
+:root {
+  --mainColor: #f3f4f7;
+  --secondaryColor: #ffffff;
+  --acsentColor: #be3144;
+  --tersierColor: #303841;
+  --semitersierColor: #3a4750;
+}
+
+body {
+  background-color: var(--mainColor);
+  min-height: 3000px;
+  font-family: 'ubuntu', sans-serif;
+}
+
+section h1 {
+  color: #3a4750;
+  font-size: 2.5rem;
+}
+
+section {
+  scroll-margin-top: 140px;
+}
+
+/* Navbar */
+.nav-link.active {
+  color: var(--acsentColor) !important;
+  font-weight: 700;
+}
+
+.nav-dark {
+  background-color: var(--secondaryColor) !important;
+  z-index: 10;
+  transition: 0.1s;
+}
+/* End Navbar */
+
+/* Home */
+.color-acsent {
+  color: var(--acsentColor);
+}
+.color-tersier {
+  color: var(--tersierColor);
+}
+
+#home {
+  color: #3a4750;
+  min-height: 100vh;
+  padding-top: 65px;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+}
+
+#home h2 {
+  font-weight: 300;
+}
+
+#home p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+/* CTA */
+.btn-custom1 {
+  background-color: #be314410;
+  border-color: var(--acsentColor);
+  text-align: center;
+  color: #ffffff;
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.rightarrow {
+  color: var(--acsentColor);
+}
+.btn-custom1:hover {
+  box-shadow: 0 0 5px var(--acsentColor);
+}
+
+.cv {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.social-icon svg {
+  margin-right: 0.5em;
+}
+.social-icon-footer svg {
+  margin-right: 0.5em;
+  margin-bottom: 10px;
+}
+/* End Home */
+
+/* About */
+hr {
+  width: 30%;
+  height: 5px;
+  color: var(--tersierColor);
+  margin: 0 auto;
+  opacity: 100%;
+}
+
+#about {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: var(--tersierColor);
+}
+/* End About */
+
+/* Skill */
+#skill {
+  min-height: 600px;
+  width: 100%;
+  color: #ffffff;
+}
+
+#skill img {
+  width: 12%;
+  margin: 20px;
+}
+
+#skill .card {
+  background-color: #e1e1e1;
+  height: 450px;
+}
+
+#skill .card:hover {
+  background-color: #ff7263;
+}
+.skill-konten {
+  margin-top: 120px;
+}
+/* End Skill */
+
+/* Sertifikat */
+#sertifikat {
+  margin-top: -170px;
+  padding-top: 270px;
+  background-color: var(--secondaryColor);
+}
+
+#sertifikat p,
+a {
+  color: var(--semitersierColor) !important;
+  text-decoration: none;
+}
+
+#sertifikat img {
+  width: 49%;
+  padding: 10px;
+}
+
+#sertifikat p:hover {
+  text-decoration: underline;
+}
+/* End Sertifikat */
+
+/* Project */
+#portofolio {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* End Project */
+
+/* Contact Me */
+#contact {
+  background-color: var(--secondaryColor);
+  padding-bottom: 150px;
+}
+/* End Contact Me */
+
+/* Footer */
+footer {
+  background-color: var(--secondaryColor);
+}
+
+footer img {
+  width: 4.5%;
+}
+/* End Footer */
