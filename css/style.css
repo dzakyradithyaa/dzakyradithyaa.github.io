@@ -47,7 +47,6 @@ section {
   min-height: 100vh;
   padding-top: 65px;
 }
-
 #home h1 {
   font-size: 2.5rem;
 }
@@ -106,6 +105,7 @@ hr {
   width: 100%;
   background-color: var(--secondaryColor);
   color: var(--tersierColor);
+  padding-bottom: 75px;
 }
 /* End About */
 
@@ -138,6 +138,7 @@ hr {
 #sertifikat {
   margin-top: -170px;
   padding-top: 270px;
+  padding-bottom: 90px;
   background-color: var(--secondaryColor);
 }
 
@@ -161,6 +162,7 @@ a {
 #portofolio {
   padding-left: 5px;
   padding-right: 5px;
+  padding-bottom: 80px;
 }
 /* End Project */
 
