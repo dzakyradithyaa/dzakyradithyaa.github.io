@@ -20,7 +20,7 @@
     transform: translate(-50%);
   }
   .btn-custom1 {
-    width: 80%;
+    width: 75%;
   }
   #about p {
     text-align: justify !important;
@@ -37,15 +37,20 @@
 
 @media screen and (max-width: 576px) {
   hr {
-    width: 75%;
+    width: 50%;
   }
   h1 {
     font-size: 1.5rem !important;
   }
+  h5 {
+    font-size: 0.8rem !important;
+  }
+  #portofolio a {
+    font-size: 0.5rem;
+  }
   footer img {
     width: 75px;
   }
-
   footer p {
     font-size: 0.8rem;
   }

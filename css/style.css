@@ -18,7 +18,7 @@ section h1 {
 }
 
 section {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 60px;
 }
 
 /* Navbar */
@@ -95,7 +95,7 @@ section {
 hr {
   width: 30%;
   height: 5px;
-  color: var(--tersierColor);
+  color: var(--acsentColor);
   margin: 0 auto;
   opacity: 100%;
 }
@@ -128,6 +128,7 @@ hr {
 
 #skill .card:hover {
   background-color: #ff7263;
+  box-shadow: 0 0 8px var(--tersierColor);
 }
 .skill-konten {
   margin-top: 120px;
@@ -141,13 +142,17 @@ hr {
   padding-bottom: 90px;
   background-color: var(--secondaryColor);
 }
-
+#sertifikat hr {
+  height: 1.5px;
+}
 #sertifikat p,
 a {
   color: var(--semitersierColor) !important;
   text-decoration: none;
 }
-
+#sertifikat a {
+  font-family: Arial, Helvetica, sans-serif;
+}
 #sertifikat img {
   width: 49%;
   padding: 10px;
@@ -163,6 +168,22 @@ a {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 80px;
+}
+#portofolio h1 {
+  color: var(--tersierColor);
+}
+#portofolio hr {
+  height: 1.5px;
+}
+#portofolio h5 {
+  color: var(--acsentColor);
+}
+#portofolio a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+#portofolio a:hover {
+  text-decoration: underline;
 }
 /* End Project */
 
