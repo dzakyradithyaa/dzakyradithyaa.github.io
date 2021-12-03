@@ -200,12 +200,21 @@ a {
 #portofolio a:hover {
   text-decoration: underline;
 }
+#portofolio .btn:hover {
+  box-shadow: 0 0 5px var(--acsentColor);
+}
+#portofolio .more-project:hover {
+  text-decoration: none;
+}
 /* End Project */
 
 /* Contact Me */
 #contact {
   background-color: var(--secondaryColor);
   padding-bottom: 150px;
+}
+#contact .btn-submit:hover {
+  box-shadow: 0 0 5px var(--acsentColor);
 }
 /* End Contact Me */
 
