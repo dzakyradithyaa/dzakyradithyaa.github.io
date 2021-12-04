@@ -203,9 +203,6 @@ a {
 #portofolio .btn:hover {
   box-shadow: 0 0 5px var(--acsentColor);
 }
-#portofolio .more-project:hover {
-  text-decoration: none;
-}
 /* End Project */
 
 /* Contact Me */
