@@ -211,19 +211,21 @@ a {
 /* Contact Me */
 #contact {
   background-color: var(--secondaryColor);
-  padding-bottom: 150px;
+  padding-bottom: 10px;
 }
 #contact .btn-submit:hover {
   box-shadow: 0 0 5px var(--acsentColor);
+}
+#contact img {
+  width: 10%;
+}
+#contact .thank-you {
+  padding-top: 150px;
 }
 /* End Contact Me */
 
 /* Footer */
 footer {
-  background-color: var(--secondaryColor);
-}
-
-footer img {
-  width: 4.5%;
+  background-color: var(--mainColor);
 }
 /* End Footer */
