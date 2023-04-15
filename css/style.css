@@ -13,7 +13,7 @@ body {
 }
 
 section h1 {
-  color: #3a4750;
+  color: #303841;
   font-size: 2.5rem;
 }
 
@@ -24,6 +24,7 @@ section {
 /* Navbar */
 .nav-link:hover {
   text-decoration: underline;
+  font-weight: 700;
 }
 
 .nav-link.active {
@@ -50,6 +51,7 @@ section {
   color: #3a4750;
   min-height: 100vh;
   padding-top: 65px;
+  padding-bottom: 30px;
 }
 #home h1 {
   font-size: 2.5rem;
@@ -95,6 +97,32 @@ section {
 }
 /* End Home */
 
+/* Quotes */
+#quotes {
+  min-height: 300px;
+  width: 100%;
+  background-color: var(--secondaryColor);
+  color: var(--acsentColor);
+  padding-bottom: 50px;
+  padding-top: 100px;
+  font-size: 1.2rem;
+}
+/* End Quotes */
+
+/* EXPERIMENT ABOUT */
+.about h3 {
+  color: var(--semitersierColor);
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-bottom: 40px;
+  padding-top: 50px;
+}
+.progresstext {
+  padding-top: 20px;
+}
+
+/* END EXPERIMENT ABOUT */
+
 /* About */
 hr {
   width: 30%;
@@ -107,30 +135,87 @@ hr {
 #about {
   min-height: 300px;
   width: 100%;
-  background-color: var(--secondaryColor);
+  background-color: var(--mainColor);
   color: var(--tersierColor);
-  padding-bottom: 75px;
-}
-
-.quotes {
-  font-size: 1.1rem;
+  padding-bottom: 30px;
 }
 
 .deskripsi {
-  font-size: 1.2rem;
+  text-align: justify;
 }
 #about p a:hover {
   text-decoration: underline;
 }
 /* End About */
 
+/* SERVICES  */
+#skill {
+  padding: 5px 0;
+}
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.skill-list div {
+  color: var(--secondaryColor);
+  background: var(--tersierColor);
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.skill-list div i {
+  color: var(--secondaryColor);
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+.skill-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.skill-list div a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.skill-list div p {
+  font-size: 14px;
+  text-align: justify;
+}
+.skill-list .kartu:hover {
+  background: var(--acsentColor);
+  transform: translateY(-10px);
+  color: var(--secondaryColor);
+  box-shadow: 0 0 5px var(--acsentColor);
+}
+.skill-list .kartu .btn {
+  min-width: 150px;
+  height: 45px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.skill-list .kartu .btn:hover {
+  box-shadow: 0 0 8px var(--tersierColor);
+}
+/* END SERVICES */
+
 /* Skill */
 #skill {
   min-height: 600px;
   width: 100%;
-  color: #ffffff;
+  color: var(--secondaryColor);
 }
-
+#skill .row {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
 #skill img {
   width: 12%;
   margin: 20px;
@@ -138,16 +223,9 @@ hr {
 
 #skill .card {
   background-color: #e1e1e1;
-  height: 450px;
+  height: 350px;
 }
 
-#skill .card:hover {
-  background-color: #ff7263;
-  box-shadow: 0 0 8px var(--tersierColor);
-}
-.skill-konten {
-  margin-top: 120px;
-}
 /* End Skill */
 
 /* Sertifikat */
@@ -158,7 +236,7 @@ hr {
   background-color: var(--secondaryColor);
 }
 #sertifikat hr {
-  height: 1.5px;
+  height: 1px;
 }
 #sertifikat p,
 a {
@@ -178,32 +256,100 @@ a {
 }
 /* End Sertifikat */
 
-/* Project */
-#portofolio {
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 80px;
+
+
+
+/* PROJECT */
+.project-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
-#portofolio h1 {
-  color: var(--tersierColor);
+
+.project{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
 }
-#portofolio hr {
-  height: 1.5px;
+
+.project img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
 }
-#portofolio h5 {
-  color: var(--acsentColor);
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0,0,0,0.6), #be3144);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  transition: height 0.5s;
 }
-#portofolio a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9rem;
+
+.layer a {
+  margin-top: 5px;
+  color: #be3144 !important; 
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 40px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
 }
-#portofolio a:hover {
-  text-decoration: underline;
+
+.project:hover img{
+  transform: scale(1.1);
 }
-#portofolio .btn:hover {
-  box-shadow: 0 0 5px var(--acsentColor);
+
+.project:hover .layer{
+  height: 100%;
 }
-/* End Project */
+
+.project h3 {
+  color: #f3f4f7;
+  font-weight: 550;
+  font-size: 1.2rem;
+  padding-top: 10px;
+}
+
+.project p {
+  padding-top: 20 px;
+  color: #f3f4f7;
+}
+
+.button{
+  display: block;
+  margin: 40px auto;
+  width: fit-content;
+  border: 3px solid #303841;
+  padding: 10px 35px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  font-weight: 600;
+  color: #303841 !important;
+  transition: background 0.5s;
+}
+
+.button:hover {
+  background-color: #303841;
+  color: #f3f4f7 !important;
+
+}
+/* END PROJECT */
 
 /* Contact Me */
 #contact {
