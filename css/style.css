@@ -8,7 +8,8 @@
 
 body {
   background-color: var(--mainColor);
-  min-height: 3000px;
+  margin: 0;
+  padding: 0;
   font-family: "ubuntu", sans-serif;
 }
 
@@ -22,14 +23,15 @@ section {
 }
 
 /* Navbar */
-.nav-link {
-  border-radius: 5px;
+.nav {
+  padding: 10px;
 }
 .nav-link:hover {
-  color: #ffffff !important;
-  font-weight: 500;
-  background-color: #303841;
-  box-shadow: 0 0 2px var(--tersierColor);
+  box-shadow: 0 0 20px #dadada;
+  background-color: #ffffff;
+  border-color: #fff;
+  font-weight: 550;
+  color: var(--tersierColor);
 }
 
 .nav-link.active {
@@ -37,15 +39,15 @@ section {
   font-weight: 700;
 }
 .nav-link.active:hover {
-  color: #ffffff !important;
+  box-shadow: 0 0 20px #dadada;
   background-color: var(--acsentColor);
-  box-shadow: 0 0 2px var(--acsentColor);
+  border-color: var(--acsentColor);
+  color: #ffffff !important;
 }
 
 .nav-dark {
   background-color: var(--secondaryColor) !important;
   z-index: 99999999;
-  transition: 0.1s;
 }
 /* End Navbar */
 

@@ -8,9 +8,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 785px) {
   #home img {
-    width: 40%;
+    width: 60%;
   }
   #home .row {
     padding-bottom: 75px;
