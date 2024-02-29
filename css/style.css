@@ -27,11 +27,8 @@ section {
   padding: 10px;
 }
 .nav-link:hover {
-  box-shadow: 0 0 20px #dadada;
-  background-color: #ffffff;
-  border-color: #fff;
-  font-weight: 550;
-  color: var(--tersierColor);
+  color: var(--acsentColor) !important;
+  text-decoration: underline;
 }
 
 .nav-link.active {
@@ -39,10 +36,8 @@ section {
   font-weight: 700;
 }
 .nav-link.active:hover {
-  box-shadow: 0 0 20px #dadada;
-  background-color: var(--acsentColor);
-  border-color: var(--acsentColor);
-  color: #ffffff !important;
+  color: var(--tersierColor) !important;
+  text-decoration: underline;
 }
 
 .nav-dark {
